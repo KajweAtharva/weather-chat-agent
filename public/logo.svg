@@ -1,0 +1,88 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0E7FF;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCD34D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)" opacity="0.95"/>
+  
+  <g filter="url(#glow)">
+    <circle cx="130" cy="70" r="25" fill="url(#sunGradient)"/>
+    
+    <g stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round">
+      <line x1="130" y1="35" x2="130" y2="25"/>
+      <line x1="160" y1="70" x2="170" y2="70"/>
+      <line x1="148" y1="48" x2="156" y2="40"/>
+      <line x1="148" y1="92" x2="156" y2="100"/>
+      <line x1="112" y1="48" x2="104" y2="40"/>
+    </g>
+  </g>
+  
+  <g filter="url(#glow)">
+    <ellipse cx="70" cy="105" rx="25" ry="22" fill="url(#cloudGradient)"/>
+    <ellipse cx="90" cy="95" rx="28" ry="25" fill="url(#cloudGradient)"/>
+    <ellipse cx="110" cy="100" rx="30" ry="27" fill="url(#cloudGradient)"/>
+    <ellipse cx="130" cy="105" rx="25" ry="22" fill="url(#cloudGradient)"/>
+    <rect x="70" y="105" width="60" height="20" fill="url(#cloudGradient)"/>
+  </g>
+  
+  <g opacity="0.8">
+    <path d="M 85 135 Q 85 145 85 148 Q 85 152 88 152 Q 91 152 91 148 Q 91 145 91 135" 
+          fill="#60A5FA" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 0,5; 0,0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M 105 130 Q 105 140 105 143 Q 105 147 108 147 Q 111 147 111 143 Q 111 140 111 130" 
+          fill="#60A5FA" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="1.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 0,5; 0,0" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M 115 135 Q 115 145 115 148 Q 115 152 118 152 Q 121 152 121 148 Q 121 145 121 135" 
+          fill="#60A5FA" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 0,5; 0,0" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <g opacity="0.9">
+    <path d="M 50 140 L 65 140 L 65 155 L 50 155 L 50 140 Z M 52 157 L 57 162 L 62 157 Z" 
+          fill="#FFFFFF" opacity="0.5"/>
+  </g>
+  
+  <g fill="#FFFFFF" opacity="0.8">
+    <circle cx="45" cy="60" r="2">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="155" cy="130" r="2">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="35" cy="120" r="1.5">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
