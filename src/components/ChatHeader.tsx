@@ -17,13 +17,6 @@ const ChatHeader: React.FC<ChatHeaderProps> = ({
   onShare,
   hasMessages,
 }) => {
-  const getWeatherIcon = () => {
-    const hour = new Date().getHours();
-    if (hour >= 6 && hour < 18) {
-      return <Sun className="w-5 h-5 text-yellow-400 animate-pulse" />;
-    }
-    return <Moon className="w-5 h-5 text-blue-300 animate-pulse" />;
-  };
 
   return (
     <div
