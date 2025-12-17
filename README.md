@@ -88,7 +88,9 @@ weather-chat-app/
 - Lucide React - Icon library
 - Weather Agent API - Mastra cloud weather agent endpoint
 
+
 Author - GitHub: @KajweAtharva
+
 Email: kajweatharva@gmail.com
 
 
