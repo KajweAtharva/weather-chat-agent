@@ -1,6 +1,7 @@
 ## Weather Agent Chat InterfaceA
 modern, responsive chat interface for interacting with a weather agent API. Built with React, TypeScript, and Tailwind CSS v4.
 
+
 ## Features
 - Real-time Streaming Responses - Get weather information as it's generated.
 - Dark/Light Theme Toggle - Seamless theme switching with smooth transitions.
@@ -10,15 +11,19 @@ modern, responsive chat interface for interacting with a weather agent API. Buil
 - Animated UI - Beautiful animations and transitions throughout.
 - Error Handling - Comprehensive error messages and loading states.
 
+
 ## Live Demo
-View Live Application
+https://weather-chat-agent-lime.vercel.app/
+
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
 - Node.js (v18.0.0 or higher)
 - npm (v9.0.0 or higher) or yarn
 
+
 ## Installation and Setup
+
 1. Clone the repository
 ```
 git clone https://github.com/KajweAtharva/weather-chat-agent/
@@ -35,6 +40,7 @@ npm install
 npm run dev
 ```
 
+
 ## Build for Production
 To create a production build:
 ```
@@ -45,6 +51,7 @@ To preview the production build locally:
 ```
 npm run preview
 ```
+
 
 ## Project Structure
 ```
@@ -71,6 +78,7 @@ weather-chat-app/
 ├── vite.config.ts
 └── README.md
 ```
+
 
 ## Technologies Used
 - React 18 - UI library
